@@ -24,6 +24,14 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+            <div className='flex flex-row gap-7 items-center mt-8'>
+                <button className='bg-[#253612] text-white px-6 py-2 rounded-lg hover:bg-[#1f2b0e] transition duration-300'>
+                    Get Started
+                </button>
+                <button className='bg-transparent text-[#253612] border border-[#253612] px-6 py-2 rounded-lg hover:bg-[#253612] hover:text-white transition duration-300'>
+                    Learn More
+                </button>
+            </div>
 
         </div>
     )
