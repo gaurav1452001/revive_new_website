@@ -28,14 +28,14 @@ const Header = () => {
                     href="#"
                     className="flex w-full md:w-auto justify-center px-5 py-3 flex-row gap-3 items-center rounded-3xl bg-[#253612] text-white hover:bg-[#364f1b] shadow-lg "
                 >
-                    <Image src="/logo_android.svg" alt="Android" width={20} height={20} className='invert' />
+                    <Image src="/logo_android.svg" alt="Android" width={15} height={15} className='invert' />
                     Download for Android
                 </Link>
                 <Link
                     href="#"
                     className="flex w-full md:w-auto justify-center px-5 py-3 flex-row gap-3 items-center rounded-3xl bg-[#253612] text-white hover:bg-[#364f1b] shadow-lg"
                 >
-                    <Image src="/logo_apple.svg" alt="iOS" width={20} height={20} className='invert' />
+                    <Image src="/logo_apple.svg" alt="iOS" width={15} height={15} className='invert' />
                     Download for iOS
                 </Link>
             </div>
