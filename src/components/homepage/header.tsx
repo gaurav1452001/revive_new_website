@@ -26,14 +26,14 @@ const Header = () => {
             <div className='flex flex-col md:flex-row gap-7 items-center mt-8 text-sm w-full  px-3 sm:px-10 md:px-0 md:w-auto'>
                 <Link
                     href="#"
-                    className="flex w-full md:w-auto justify-center px-5 py-3 flex-row gap-3 items-center rounded-3xl bg-[#253612] text-white hover:bg-[#364f1b] shadow-lg "
+                    className="flex w-full md:w-auto justify-center px-5 py-3 flex-row gap-3 items-center rounded-3xl bg-[#253612] text-white hover:bg-[#364f1b] shadow-sm shadow-neutral-500"
                 >
                     <Image src="/logo_android.svg" alt="Android" width={15} height={15} className='invert' />
                     Download for Android
                 </Link>
                 <Link
                     href="#"
-                    className="flex w-full md:w-auto justify-center px-5 py-3 flex-row gap-3 items-center rounded-3xl bg-[#253612] text-white hover:bg-[#364f1b] shadow-lg"
+                    className="flex w-full md:w-auto justify-center px-5 py-3 flex-row gap-3 items-center rounded-3xl bg-[#253612] text-white hover:bg-[#364f1b] shadow-sm shadow-neutral-500"
                 >
                     <Image src="/logo_apple.svg" alt="iOS" width={15} height={15} className='invert' />
                     Download for iOS
