@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <div className='flex flex-col bg-[#f5faf6] m-3 md:m-8 rounded-2xl border border-neutral-200 items-center px-3 overflow-hidden h-[900px] md:h-[1000px]' >
             <Navbar />
-            <div className='flex flex-col md:flex-row gap-7 items-center mt-20' >
+            <div className='flex flex-col md:flex-row gap-7 items-center mt-14' >
                 <AnimatedTooltipPreview />
                 <div className='text-xs text-neutral-500'>
                     Trusted by thousands of healthy families
