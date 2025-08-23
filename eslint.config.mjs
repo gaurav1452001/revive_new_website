@@ -19,7 +19,7 @@ const eslintConfig = [
       "build/**",
       "next-env.d.ts",
       "src/components/ui/**/*",
-      "src/lib/ui/**/*"
+      "src/lib/**/*"
     ],
   },
 ];
