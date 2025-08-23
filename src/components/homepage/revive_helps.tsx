@@ -1,12 +1,11 @@
 import React from 'react'
-import { AnimatedTooltipPreview } from '@/components/homepage/tooltip'
-import Navbar from '../navbar'
 import Link from 'next/link'
 import Image from 'next/image'
+import HelpersSection from './helpersSection'
 const ReviveHelps = () => {
     return (
-        <div className='flex flex-col bg-[#f5faf6]' >
-            <div className='bg-[#386641] px-6 py-8 md:py-32 md:px-24 lg:py-48 lg:px-36 xl:px-52'>
+        <div className='flex flex-col bg-[#f5faf6] w-full' >
+            <div className='bg-[#386641] px-6 py-8 md:py-32 md:px-24 lg:py-48 lg:px-36 xl:px-52 pb-32'>
                 <div className='flex flex-col md:flex-row gap-9 md:gap-8'>
                     <div className='md:w-1/2 text-2xl md:text-5xl'>
                         We Can Help in more ways
@@ -21,14 +20,14 @@ const ReviveHelps = () => {
                                     href="#"
                                     className="flex justify-baseline px-5 py-3 flex-row gap-3 items-center rounded-3xl bg-[#ffffff] text-[#386641] shadow-sm shadow-neutral-500 min-w-[220px] w-[220px]"
                                 >
-                                    <Image src="/logo_android.svg" alt="Android" width={15} height={15} className='fill-amber-700'/>
+                                    <Image src="/logo_android.svg" alt="Android" width={15} height={15} className='fill-amber-700' />
                                     Download for Android
                                 </Link>
                                 <Link
                                     href="#"
                                     className="flex justify-baseline px-5 py-3 flex-row gap-3 items-center rounded-3xl bg-[#ffffff] text-[#386641] shadow-sm shadow-neutral-500 min-w-[220px] w-[220px]"
                                 >
-                                    <Image src="/logo_apple.svg" alt="iOS" width={15} height={15}/>
+                                    <Image src="/logo_apple.svg" alt="iOS" width={15} height={15} className='fill-amber-600'/>
                                     Download for iOS
                                 </Link>
                             </div>
@@ -36,9 +35,7 @@ const ReviveHelps = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-col'>
-
-            </div>
+            <HelpersSection />
         </div>
     )
 }
