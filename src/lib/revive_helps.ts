@@ -1,6 +1,6 @@
-import animationData1 from "../../public/revive_helps1.json";
-import animationData2 from "../../public/revive_helps4.json";
-import animationData3 from "../../public/revive_helps3.json";
+import animationData1 from "../../public/revive_helps4.json";
+import animationData2 from "../../public/revive_helps3.json";
+import animationData3 from "../../public/revive_helps1.json";
 
 export interface HelperSectionData {
     title: string;
@@ -18,7 +18,7 @@ export const helpersSectionData: HelperSectionData[] = [
             "Our ranking system is designed by registered holistic health experts, ensuring you and your family make informed decisions and improve health outcomes."
         ],
         animation: animationData1,
-        bgColor: "#ffedee"
+        bgColor: "#cbe2cd"
     },
     {
         title: "Expert Guidance",
@@ -28,7 +28,7 @@ export const helpersSectionData: HelperSectionData[] = [
             "Access ongoing support to help you achieve your health goals."
         ],
         animation: animationData2,
-        bgColor: "#cbe2cd"
+        bgColor: "#ffedee"
     },
     {
         title: "Comprehensive Reports",

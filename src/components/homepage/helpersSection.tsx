@@ -13,7 +13,7 @@ const HelpersSection = () => {
                         <h3 className='text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 sm:mb-6'>{helper.title}</h3>
                         <div className='flex flex-col'>
                             {helper.points.map((point, pointIndex) => (
-                                <div key={pointIndex} className='text-sm sm:text-base md:text-lg flex flex-row gap-4 sm:gap-6 mb-4 sm:mb-5 items-start sm:items-baseline'>
+                                <div key={pointIndex} className='text-sm sm:text-base md:text-lg flex flex-row gap-4 mb-4 sm:mb-5 items-start sm:items-baseline'>
                                     <CircleCheck className="h-5 w-5 sm:h-6 sm:w-6 mt-0.5 sm:mt-0 flex-shrink-0 fill-white invert" />
                                     <span>{point}</span>
                                 </div>
