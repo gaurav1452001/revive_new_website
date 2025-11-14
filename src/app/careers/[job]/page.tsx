@@ -33,6 +33,7 @@ export default function JobApplicationPage() {
 
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [formData, setFormData] = useState({
+    internshipRole: jobTitle,
     firstName: "",
     middleName: "",
     lastName: "",
@@ -119,6 +120,7 @@ export default function JobApplicationPage() {
         "https://docs.google.com/forms/d/1pDWRloTQdvqWL_hosodJ8jgjMG3NcYB45szpLgRZRpk/formResponse"
 
       const data = new FormData()
+      data.append("entry.185995148", formData.internshipRole)
       data.append("entry.1976379169", formData.firstName)
       data.append("entry.1446141700", formData.middleName)
       data.append("entry.105003036", formData.lastName)
@@ -187,6 +189,14 @@ export default function JobApplicationPage() {
               </h2>
 
               <div className="space-y-4">
+                {/* Internship Role (Auto-filled) */}
+                <Input
+                  name="internshipRole"
+                  value={formData.internshipRole}
+                  readOnly
+                  className="bg-[#f9fafb] border border-gray-400 text-gray-800 rounded-md cursor-not-allowed"
+                />
+
                 {/* Name Fields */}
                 <div className="grid gap-4 md:grid-cols-3">
                   <Input
@@ -236,7 +246,7 @@ export default function JobApplicationPage() {
                     className="bg-[#f9fafb] border border-gray-400 text-gray-800 placeholder:text-gray-500 rounded-md focus:border-[#386641] focus:ring-2 focus:ring-[#386641]/30 outline-none transition"
                   />
                   <Select value={formData.gender} onValueChange={handleSelectChange}>
-                    <SelectTrigger className="bg-[#f9fafb] border border-gray-400 text-gray-800 placeholder:text-gray-500 rounded-md focus:border-[#386641] focus:ring-2 focus:ring-[#386641]/30 outline-none transition">
+                    <SelectTrigger className="bg-[#f9fafb] border border-gray-400 text-gray-800 rounded-md focus:border-[#386641] focus:ring-2 focus:ring-[#386641]/30 outline-none transition">
                       <SelectValue placeholder="Gender *" />
                     </SelectTrigger>
                     <SelectContent className="bg-white border border-gray-300 text-gray-800 shadow-lg rounded-md">
